@@ -29,6 +29,7 @@ public class CourseController {
         return "Curso creado correctamente";
     }
 
+    @PutMapping("/courses/editar")
     public Course editCourse(@RequestBody Course course){
         iCourseService.editCourse(course);
         return this.getCourseById(course.getId_curso());
