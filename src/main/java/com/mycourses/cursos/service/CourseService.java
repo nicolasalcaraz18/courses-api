@@ -20,7 +20,7 @@ public class CourseService implements ICourseService{
     }
 
     @Override
-    public Course getCourse(Long id_course) {
+    public Course findCourse(Long id_course) {
         return this.iCourseRepository.findById(id_course).orElse(null);
     }
 

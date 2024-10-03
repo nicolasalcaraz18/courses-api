@@ -8,7 +8,7 @@ public interface ICourseService {
 
     List<Course> getCourses();
 
-    Course getCourse(Long id_course); //obtener todos los temas de un determinado curso.
+    Course findCourse(Long id_course); //obtener todos los temas de un determinado curso.
 
     void saveCourse(Course course);
 
